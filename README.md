@@ -44,7 +44,17 @@ urlpatterns = [
   path('route3/<int:variable_name>', views.route3_name, name='route3_name')
 ]
 ```
-## 
+## How to make a view function:
+```python
+def route1_name(request):
+  return render(request, 'template.html')
+
+def route2_name(request, string_variable):
+  return render(request, 'template.html', {'data':string_variable})
+
+def route3_name(request, variable_name):
+  return render(request, 'template.html', {'data':variable_name})
+```
 
 
 
