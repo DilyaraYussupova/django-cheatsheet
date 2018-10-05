@@ -36,3 +36,30 @@ djangoproject
 |
 |- manage.py: Let's us manage everything about our project
 ```
+## How to make URLs with the path() function:
+```python
+urlpatterns = [
+  path('route1/', views.route1_name, name='route1_name'),
+  path('route2/<string_variable>', views.route2_name, name='route2_name'),
+  path('route3/<int:variable_name>', views.route3_name, name='route3_name')
+]
+```
+## 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
